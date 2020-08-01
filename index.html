@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Questão 2 sobre DOM</title>
+		<script type="text/javascript">	
+			function lista(){
+				var texto = document.getElementById('campoTexto').value
+				
+				var li = document.createElement('li')
+				li.innerHTML = texto
+				
+				var ol = document.getElementsByTagName('ol') 
+				ol[0].appendChild(li)        
+			
+			}
+		</script>	
+	</head>
+	<body>
+
+		<h1>Estudando Para O Vestibular</h1>
+		
+		<label>Adiciona as matérias que você estudar: 
+				<input type="text" id="campoTexto"/>
+				<button type="button" onclick="lista()">Enviar</button> 
+		</label>
+		
+		<p>As matérias que já estudei: </p>	
+		
+		<ol>
+			<li>Mecânica</li>
+			<li>Ópticas</li>
+			<li>Era Vargas</li>
+			<li>Neocolonialismo</li>
+			<li>Primeira e Segunda Guerra Mundial</li>
+		<ol>
+	</body>
+</html>
